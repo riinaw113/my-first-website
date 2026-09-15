@@ -21,7 +21,9 @@ img {
      border-radius: 20px;
 }
 body {
-    background-color:rgba(52, 42, 77, 0.945);
+  background: linear-gradient(135deg, #17131f, #342a4d, #17131f);
+background-size: 300% 300%;
+animation: gradientMove 10s ease infinite;
     text-align: center;
     }
     h1{color:white;
@@ -31,6 +33,19 @@ body {
     body{
     font-family:CEN;
     }
+     @keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
     h1{
     font-family:BackToBlack;
     }
@@ -85,8 +100,8 @@ body {
 </nav>
 </header>
      <main>
+ <img src="me.jpeg" class="my-photo">
 <h1>Welcome</h1>
-     <img src="me.jpeg" class="my-photo">
 <p>this is my first website</p>
 <p>and my name is romina</p>
           </main>
