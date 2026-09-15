@@ -19,6 +19,8 @@ img {
      display: block;
      margin:20px auto;
      border-radius: 20px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+animation: photoAppear 1.2s ease;
 }
 body {
   background: linear-gradient(135deg, #17131f, #342a4d, #17131f);
@@ -44,6 +46,16 @@ animation: gradientMove 10s ease infinite;
 
     100% {
         background-position: 0% 50%;
+    }
+         @keyframes photoAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
     h1{
